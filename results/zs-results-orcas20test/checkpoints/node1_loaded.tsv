@@ -1,0 +1,21 @@
+qid	query	human_label_coarse	human_label_fine	human_label_gold	data_split	did	url	human_label
+4533021	platinum worth	Informational	Abstain	Abstain	validation	D3192584	https://www.jmbullion.com/charts/platinum-price/	Abstain
+2723526	sony pmb software download	Transactional	Abstain	Transactional	validation	D2598218	https://esupport.sony.com/swu/5134/LA/EN/	Transactional
+12574555	autism	Navigational	Abstain	Navigational	validation	D1671038	http://autism.emedtv.com/autism/autism-in-adults.html	Navigational
+5084090	server hypixel	Informational	Abstain	Abstain	validation	D2488047	http://minecraftservers.org/server/221843	Abstain
+7435435	care plus oxygen	Informational	Instrumental	Instrumental	validation	D2080496	http://www.aerocareusa.com/	Instrumental
+4781397	what is glycogenolysis	Informational	Factual	Factual	validation	D617503	http://www.healthguidance.org/entry/15587/1/What-Is-Glycogenolysis.html	Factual
+9155903	how to register a dog	Informational	Instrumental	Instrumental	validation	D3257328	https://www1.nyc.gov/site/doh/services/dog-licenses.page	Instrumental
+2230093	ups hours of operation	Informational	Abstain	Abstain	validation	D151923	https://www.theupsstore.com/	Abstain
+4444111	comcast view my bill online	Transactional	Abstain	Transactional	validation	D75668	https://www.doxo.com/info/comcast	Transactional
+4975497	steam_api dll download	Transactional	Abstain	Transactional	validation	D2100602	https://www.dll-files.com/steam_api.dll.html	Transactional
+7374364	lab corp olney md	Navigational	Abstain	Navigational	validation	D1051527	https://www.labcorp.com/	Navigational
+8490676	retinal hemorrhage	Informational	Abstain	Abstain	validation	D3332544	https://www.optometricmanagement.com/issues/2008/january-2008/the-many-faces-of-a-retinal-hemorrhage	Abstain
+7830987	cause and effect article	Informational	Instrumental	Instrumental	validation	D1174836	https://academichelp.net/samples/academics/essays/cause-effect/	Instrumental
+12383687	ie download	Transactional	Abstain	Transactional	validation	D2060005	https://downloads.yahoo.com/internetexplorer/	Transactional
+4081222	us open tennis 201	Informational	Factual	Factual	validation	D1398498	https://www.tennistours.com/us-open/tickets	Factual
+12057483	prestige mercedes benz	Navigational	Abstain	Navigational	validation	D1353860	http://www.prestigemb.com/	Navigational
+6662399	president death dates	Informational	Factual	Factual	validation	D311763	https://en.wikipedia.org/wiki/List_of_United_States_Presidents_by_date_of_death	Factual
+11751170	determine the domain of the function	Informational	Instrumental	Instrumental	validation	D2316172	https://www.symbolab.com/solver/function-domain-calculator	Instrumental
+10963690	phoenix premium outlets	Navigational	Abstain	Navigational	validation	D2620183	https://www.premiumoutlets.com/outlet/phoenix	Navigational
+8319821	speech pathologist salary	Informational	Factual	Factual	validation	D1102537	https://www.payscale.com/research/AU/Job=Speech_Pathologist/Salary	Factual
