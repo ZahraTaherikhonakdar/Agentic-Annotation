@@ -31,7 +31,6 @@ def build_graph(cfg: RunConfig):
     graph = StateGraph(PipelineState)
     graph.add_node("load_queries", lambda s: node_load_queries(s, cfg))
 
-    # Use OpenAI GPT-4.1-mini explicitly
     ann_cfg = AnnotateConfig(
         mode="zeroshot", #fewshot
         fewshot_path="artifacts/examples_fewshot_v1.jsonl",
@@ -42,7 +41,7 @@ def build_graph(cfg: RunConfig):
         # backend selection
         provider="openai",               # custom provider tag (you can handle this in annotate.py)
         api_base="https://api.openai.com/v1",
-        model_name="gpt-4.1",
+        model_name="gpt-5",
 
         # I/O + schema
         output_tsv="results/checkpoints/node2_annotated.tsv",
@@ -61,11 +60,11 @@ def build_graph(cfg: RunConfig):
     graph.add_node("evaluate", lambda s: EvaluateAgent(EvalConfig(
         output_tsv="results/eval/metrics_by_class.tsv",
         output_json="results/eval/summary.json",
-        use_prf=True,  # no human labels → skip P/R/F1
-        use_kappa=True,  # no human labels → skip κ vs human
-        use_judge=True,  # run judge
-        judge_mode="compare_to_human",  # judge provides its own label; no gold needed -- "compare_to_human", # judge checks AI vs human gold
-        judge_model="gpt-4.1-mini",  # use a different model than the annotator
+        use_prf=True,  
+        use_kappa=True,  
+        use_judge=True,  
+        judge_mode="compare_to_human",  
+        judge_model="gpt-5-pro",  
         judge_sample_size=500,
     )).run(s))
 
@@ -88,9 +87,8 @@ def build_graph(cfg: RunConfig):
 def route_after_validate(state: PipelineState) -> str:
     for r in state.get("records", []):
         if r.get("needs_retry"):
-            return "annotate"   # loop back to the SAME annotate node
-    return "evaluate"                # or "judge_eval" if you have that node
-
+            return "annotate"  
+    return "evaluate"               
 if __name__ == "__main__":
     cfg = RunConfig(
         dataset_path=r"D:\RePair\data\preprocessed\orcas\original data\orcas.tsv",
@@ -98,7 +96,7 @@ if __name__ == "__main__":
         lowercase=True,
         strip_punct=True,
         keep_cols=["qid", "query", "level_1", "level_2", "label", "data_split", "did", "url"],
-        sample_n=5000, # 467smaller sample for faster test, None: run on the full 2 M dataset
+        sample_n=5000, 
         output_dir="results",
         output_checkpoint="results/checkpoints/node1_loaded.tsv",
         prompt_version="v1",
