@@ -8,7 +8,6 @@ from typing import Any, Dict, Iterable, List, Optional
 
 import pandas as pd
 
-# Optional deps
 try:
     import jsonschema
 except ImportError:
@@ -112,5 +111,4 @@ def read_table_any(path: str) -> pd.DataFrame:
     elif path.endswith(".csv"):
         return pd.read_csv(path)
     else:
-        # Prefer TSV for your pipeline; error if unknown
         raise ValueError(f"Unsupported dataset extension for {path}. Use .tsv (preferred) or .csv.")
