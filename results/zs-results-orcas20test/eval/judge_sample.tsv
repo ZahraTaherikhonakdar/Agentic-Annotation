@@ -1,0 +1,21 @@
+qid	query	human_label	ai_label	judge_decision	judge_confidence	judge_rationale
+4533021	platinum worth	abstain	factual	incorrect	0.8	Query is ambiguous; 'platinum worth' could be factual but lacks clarity, human abstain is better.
+11751170	determine the domain of the function	instrumental	instrumental	correct	0.9	Query asks how to perform a task, fitting instrumental intent.
+12057483	prestige mercedes benz	navigational	navigational	correct	0.9	Query seeks to reach a specific brand site or info, matching navigational intent.
+2723526	sony pmb software download	transactional	transactional	correct	1.0	Query clearly indicates intent to download software, matching transactional label.
+4444111	comcast view my bill online	transactional	navigational	incorrect	0.9	Query implies action (view bill), fitting transactional more than navigational.
+4781397	what is glycogenolysis	factual	factual	correct	1.0	Query seeks factual knowledge about glycogenolysis.
+8490676	retinal hemorrhage	abstain	factual	incorrect	0.8	Query is ambiguous; could be symptom or condition, so abstain fits better.
+5084090	server hypixel	abstain	navigational	incorrect	0.8	Query is ambiguous; 'server hypixel' could be navigational but lacks clarity.
+10963690	phoenix premium outlets	navigational	navigational	correct	0.9	Query seeks a specific location, fitting navigational intent.
+6662399	president death dates	factual	factual	correct	1.0	Query seeks factual information about dates of presidents' deaths.
+12383687	ie download	transactional	transactional	correct	0.9	Query implies intent to download Internet Explorer, matching transactional intent.
+12574555	autism	navigational	factual	correct	0.9	Query likely seeks information about autism, fitting factual intent better than navigational.
+4975497	steam_api dll download	transactional	transactional	correct	0.9	Query indicates intent to download, matching transactional label.
+8319821	speech pathologist salary	factual	factual	correct	0.9	Query seeks factual info about salary, matching factual intent.
+7435435	care plus oxygen	instrumental	abstain	incorrect	0.8	Query likely seeks info on oxygen care, fitting instrumental intent.
+7830987	cause and effect article	instrumental	factual	incorrect	0.9	Query implies how-to or writing guidance, fitting instrumental not factual.
+2230093	ups hours of operation	abstain	factual	incorrect	0.9	Query is ambiguous; could be navigational or factual, so abstain fits better.
+7374364	lab corp olney md	navigational	navigational	correct	0.9	Query seeks a specific location, fitting navigational intent.
+4081222	us open tennis 201	factual	navigational	incorrect	0.9	Query seeks information about US Open tennis, not a specific site/page.
+9155903	how to register a dog	instrumental	instrumental	correct	0.9	Query asks for instructions, fitting instrumental intent.
