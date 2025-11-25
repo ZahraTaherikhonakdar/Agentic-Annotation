@@ -1,0 +1,10 @@
+{
+  "overall": {
+    "accuracy": 0.65,
+    "macro_precision": 0.7388888888888889,
+    "macro_recall": 0.65,
+    "macro_f1": 0.6445054945054945,
+    "cohen_kappa": 0.5625,
+    "judge_score": 0.65
+  }
+}
