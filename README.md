@@ -1,4 +1,9 @@
-# Log-Free Query-Type (Intent) Modeling for Conditional Query Refinement in
+# End-to-End Intent-Aware Query Refinement via Agentic LLM-Based Log-Free Intent Annotation.
+This readme is divided to 2 parts:
+1- Comparative Study of Query Types on Query Refinement
+2- Automatic Query-Intent Annotation: A Log-Free Agentic LLM Framework
+Here is a overal overview:
+<td align="center"><img src='flowtypef.png' width="80%" /></td>
 
 # Comparative Study of Query Types on Query Refinement
 
